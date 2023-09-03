@@ -1,0 +1,4 @@
+# ignore macos files
+.DS_Store
+# ignore environmental cash files
+.env/
