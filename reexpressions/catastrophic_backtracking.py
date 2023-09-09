@@ -1,3 +1,7 @@
+"""
+Поиск вхождений символа а, но без backtracking
+"""
+
 import re
 
 regex = r'(?>a+)b'
