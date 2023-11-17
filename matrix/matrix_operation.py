@@ -1,4 +1,5 @@
 from icecream import ic
+import numpy as np
 
 def matrix_sum():
     
@@ -10,9 +11,7 @@ def matrix_sum():
         [6,7,3],
         [4,5,9]]
 
-    result = [[0,0,0],
-            [0,0,0],
-            [0,0,0]]
+    result = np.zeros((3,3))
 
     for row_id in range(len(X)):
         for column_id in range(len(X[0])):
@@ -20,8 +19,7 @@ def matrix_sum():
             # ic(result)
     return result
 
-
-# ic(matrix_sum())
+ic(matrix_sum())
 
 def matrix_multiplication():
     
@@ -33,9 +31,7 @@ def matrix_multiplication():
         [6,7,3],
         [4,5,9]]
 
-    result = [[0,0,0],
-            [0,0,0],
-            [0,0,0]]
+    result = np.zeros((3,3))
     
     # ic(len(X))
     # ic(len(X[0]))
@@ -51,7 +47,7 @@ def matrix_multiplication():
             # ic(result)
     return result
 
-# ic(matrix_multiplication())
+ic(matrix_multiplication())
 
 def matrix_transponse():
 
@@ -63,9 +59,7 @@ def matrix_transponse():
         [6,7,3],
         [4,5,9]]
 
-    result = [[0,0,0],
-            [0,0,0],
-            [0,0,0]]
+    result = np.zeros((3,3))
     
     # for row_id in range(len(X)):
         # for column_id in range(len(X[0])):
